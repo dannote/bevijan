@@ -1,0 +1,9 @@
+{
+    "domain": "htmlwg.org",
+    "deploy": "http://localhost/",
+    "name": "Bevy Trojan Horse",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/dannote/bevijan.git"
+    }
+}
