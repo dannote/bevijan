@@ -1,6 +1,6 @@
 {
     "domain": "htmlwg.org",
-    "deploy": "http://localhost/",
+    "deploy": "http://localhost:7777/",
     "name": "Bevy Trojan Horse",
     "repository": {
         "type": "git",
