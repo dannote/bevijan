@@ -1,9 +1,9 @@
 {
-    "domain": "htmlwg.org",
-    "deploy": "http://localhost:7777/",
-    "name": "Bevy Trojan Horse",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/dannote/bevijan.git"
-    }
+   "domain": "htmlwg.org",
+   "deploy": "http://localhost:7777/",
+   "name": "Bevy Trojan Horse",
+   "repository": {
+      "type": "git",
+      "url": "https://github.com/dannote/bevijan.git"
+   }
 }
